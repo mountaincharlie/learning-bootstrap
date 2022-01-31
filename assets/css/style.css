@@ -2,6 +2,15 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.container-wrapper{
+
+}
+
+.container-wrapper--red{
+    color: white;
+    background-color:#f05f40;
+}
+
 .alert-container .col-12{
     padding-left: 0;
     padding-right: 0;
@@ -46,7 +55,24 @@ body{
 
 .features-container{}
 
-/* Navrbar */
+/* Page Headers */
+
+.page-header{
+    margin-bottom:0;
+    border-bottom:0;
+    text-align:center;
+}
+
+.page-header h2{
+    margin-top:0;
+}
+
+.quotes .page-header{
+    margin-bottom: 25px;
+
+}
+
+/* Navbar */
 
 .navalert-container{
     position: absolute;
@@ -105,14 +131,26 @@ body{
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange{
-    background-color: #4e390a;
+    background-color: #f05f40;
+}
+
+.block-divider--white{
+    background-color: white;
 }
 
 .block-divider--short{
     width: 35px;
+}
+
+/* Content containers */
+
+.content-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* Buttons */
@@ -137,3 +175,17 @@ body{
     border-color: #b83112;
 }
 
+.feature{
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+.feature .btn{
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+} 
