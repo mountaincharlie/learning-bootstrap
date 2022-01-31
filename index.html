@@ -17,51 +17,54 @@
         <link rel = "stylesheet" href = "./assets/css/style.css" type = "text/css">
     </head>
     <body>
-        <nav class = "navbar navbar-light bg-light navbar-expand-sm">
-            <a href = "/" class = "navbar-brand">Coffee Bean Drop</a>
-            <!-- dropdown button with the ul as its target using data-target to specify its id and its aria-expanded is set to false by default -->
-            <button class = "navbar-toggler ml-auto" type = "button" data-toggle = "collapse" data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle navigation">
-                <span class = "navbar-toggler-icon"></span>
-            </button>
-            <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
-                <ul class = "navbar-nav mr-auto">
-                    <li class = "active nav-item mr-2"><a href = "/" class = "nav-link">Home</a></li>
-                    <li class = "nav-item mr-2"><a href = "/" class = "nav-link">About</a></li>
-                    <li class = "nav-item dropdown">
-                        <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" role = "button" data-toggle = "dropdown" ariahaspopup = "true" aria-expanded = "false">
-                            Coffee Beans
-                        </a>
-                        <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
-                            <a class = "dropdown-item" href = "#">Tanzania Peaberry</a>
-                            <a class = "dropdown-item" href = "#">Hawaii Kona</a>
-                            <a class = "dropdown-item" href = "#">Nicaraguan</a>
-                            <a class = "dropdown-item" href = "#">Sumatra Mandheling</a>
-                            <a class = "dropdown-item" href = "#">Sulawesi Toraja</a>
+        <div class = "container-fluid navalert-container">
+            <div class="container-fluid alert-container">
+                <div class = "row d-none d-sm-block">
+                    <div class = "col-12">
+                        <div class = "site-wide-alert alert alert-warning">
+                            <strong>Sale Now On!</strong> We've got a sale on - get 12-months for the price of 6! <a href = "/">Check here for details</a>
                         </div>
-                    </li>
-                    <!-- only visible on default screens -->
-                    <li class = "nav-item mr-2 d-block d-sm-none">
-                        <a class = "nav-link" href = "/login">Sign In / Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- div hidden at small/default screen sizes and visible again on medium -->
-            <div class = "d-none d-md-block">
-                <p class = "navbar-text my-auto mr-2"><i>Excellent coffee beans delivered to your door!</i></p>
-                <a href = "/login">Sign In / Sign Up</a>
-            </div>
-        </nav>
-
-        <!-- main page content -->
-        <!-- <div class="container alert-container">
-            <div class = "row d-none d-sm-block">
-                <div class = "col-12">
-                    <div class = "alert alert-warning">
-                        <strong>Sale Now On!</strong> We've got a sale on - get 12-months for the price of 6! <a href = "/">Check here for details</a>
                     </div>
                 </div>
             </div>
-        </div> -->
+            <nav class = "navbar navbar-dark navbar-expand-sm">
+                <a href = "/" class = "navbar-brand">Coffee Bean Drop</a>
+                <!-- dropdown button with the ul as its target using data-target to specify its id and its aria-expanded is set to false by default -->
+                <button class = "navbar-toggler ml-auto" type = "button" data-toggle = "collapse" data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+                    <ul class = "navbar-nav mr-auto">
+                        <li class = "active nav-item mr-2"><a href = "/" class = "nav-link">Home</a></li>
+                        <li class = "nav-item mr-2"><a href = "/" class = "nav-link">About</a></li>
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" role = "button" data-toggle = "dropdown" ariahaspopup = "true" aria-expanded = "false">
+                                Coffee Beans
+                            </a>
+                            <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+                                <a class = "dropdown-item" href = "#">Tanzania Peaberry</a>
+                                <a class = "dropdown-item" href = "#">Hawaii Kona</a>
+                                <a class = "dropdown-item" href = "#">Nicaraguan</a>
+                                <a class = "dropdown-item" href = "#">Sumatra Mandheling</a>
+                                <a class = "dropdown-item" href = "#">Sulawesi Toraja</a>
+                            </div>
+                        </li>
+                        <!-- only visible on default screens -->
+                        <li class = "nav-item mr-2 d-block d-sm-none">
+                            <a class = "nav-link" href = "/login">Sign In / Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- div hidden at small/default screen sizes and visible again on medium -->
+                <div class = "d-none d-md-block">
+                    <p class = "navbar-text my-auto mr-2"><i>Excellent coffee beans delivered to your door!</i></p>
+                    <a href = "/login" class = "btn btn--cta btn--red">Sign In / Sign Up</a>
+                </div>
+            </nav>
+        </div>
+        
+
+        <!-- main page content -->
         <div class = "container-fluid callout-container">
             <!-- Callout -->
             <div class = "opaque-overlay">&nbsp;</div>
@@ -75,7 +78,7 @@
                             <span class = "d-inline d-sm-none"><br></span>
                             <strong><mark>First one is free!</mark></strong>
                         </p>
-                        <button class = "btn btn-cta btn--red btn-lg" data-toggle = "modal" data-target = "#signUpModal">Sign up!</button>
+                        <button class = "btn btn--cta btn--red btn-lg" data-toggle = "modal" data-target = "#signUpModal">Sign up!</button>
                         <p class = "text-muted"><small>You must be over 18 to sign up for the service.</small></p>
                     </section>
                 </div>

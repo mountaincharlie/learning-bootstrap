@@ -2,15 +2,29 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container{}
+.alert-container .col-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+
+}
 
 .callout-container{
     height: 100vh;
+
     background: url("../images/coffee-beans-bg.jpg") no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: 0;
 
     display: flex;
     align-items: center;
@@ -32,20 +46,34 @@ body{
 
 .features-container{}
 
-/* Block Dividers */
+/* Navrbar */
 
-.block-divider{
-    width: 75px;
-    height: 5px;
+.navalert-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index:1;
+}
+
+.navbar{
+    margin-bottom: 0;
     border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.50);
 }
 
-.block-divider--orange{
-    background-color: #4e390a;
+.navbar .navbar-toggler{
+    border:0;
 }
 
-.block-divider--short{
-    width: 35px;
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a{
+    font-weight: bold;
 }
 
 /* Jumbotron */
@@ -71,9 +99,25 @@ body{
     color: #d0d0d0;
 }
 
+/* Block Dividers */
+
+.block-divider{
+    width: 75px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--orange{
+    background-color: #4e390a;
+}
+
+.block-divider--short{
+    width: 35px;
+}
+
 /* Buttons */
 
-.btn-cta{
+.btn--cta{
     font-weight:bold;
     border-radius: 23px;
     width:160px;
